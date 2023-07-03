@@ -19,7 +19,8 @@ To configure the obfuscation process, you can set the following options:
 
 ### Examples
 
-You can find example code in the examples/ directory.
+coming soon...
+**feal free to add examples**
 
 ## Security Warning
 
