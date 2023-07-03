@@ -29,16 +29,16 @@ The use of `eval` and obfuscated code poses security risks, and executing obfusc
 
 ## Documentation
 
-### Normalised code "~"
-normalised code makes it so that your code is not obfiscated if its between 2 "~" but dont use it to much or the code will refuse to run
+### Normalised Code "~"
+Normalised code ensures that your code is not obfuscated if it is between two "~" characters. However, excessive usage of normalised code may cause the code to refuse to run.
 
-Note: the amount alowed can be changed within the `config.json` file but is not encoraged.
+Note: The allowed amount of normalised code can be changed within the config.json file, but it is not encouraged.
 
-### Dead modifyer "^"
-at least 10% of your code must be dead modifyers "^" dead modifyers dont count if they are next to each over
+### Dead Modifier "^"
+At least 10% of your code must be dead modifiers "^". Dead modifiers do not count if they are next to each other.
 
-### Capitalisation modifyer "`"
-this modifyer will simplely capitalise the next charicter (if possible)
+### Capitalisation Modifier "`"
+This modifier will simply capitalise the next character if possible.
 
 ### createVariable(value)
 This function is used to create a new variable. The `value` parameter represents the initial value of the variable. it can be acsesed by its index wich is determend by when this function is called.                                                                                     
