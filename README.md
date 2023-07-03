@@ -44,7 +44,7 @@ This function is used to change the value of an existing variable. The `index` p
 ```javascript
 createVariable(10);                     <-- variable 0 has a value of 10
 changeVariable(0, 100)                  <-- variable 0 now has a value of 100
-```z
+```
 
 ### getVariable(index)
 This function is used to retrieve the value of a variable. The `index` parameter represents the index of the variable to be retrieved. The function returns the value of the variable at the specified index in the variables array.
