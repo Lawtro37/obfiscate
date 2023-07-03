@@ -29,7 +29,15 @@ The use of `eval` and obfuscated code poses security risks, and executing obfusc
 
 ## Documentation
 
-### normalised code "~"
+### Normalised code "~"
+normalised code makes it so that your code is not obfiscated if its between 2 "~" but dont use it to much or the code will refuse to run
+
+Note: the amount alowed can be changed within the `config.json` file but is not encoraged.
+
+### Dead modifyer "^"
+at least 10% of your code must be dead modifyers "^" dead modifyers dont count if they are next to each over
+
+### Capitalisation modifyer "`"
 
 ### createVariable(value)
 This function is used to create a new variable. The `value` parameter represents the initial value of the variable. it can be acsesed by its index wich is determend by when this function is called.                                                                                     
@@ -79,7 +87,9 @@ runFunction(0); <-- outputs 20
 runFunction(0); <-- outputs 30
 ```
 
-Note: The runFunction function randomly delays the execution of the function within a specified range of time,that can be changed within the `config.json` file.
+Note: The runFunction function randomly delays the execution of the function within a specified range of time, that can be changed within the `config.json` file but is not encoraged.
+
+**Feel free to provide additional details or examples in this documentation to help other users understand the effects and usage of these modifiers and functions.**
 
 ## Contributing
 
