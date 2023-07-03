@@ -1,0 +1,15 @@
+{
+    "securityWarnig": true,
+    "obfFilePath": "../scripts/script.obf",
+    "obfuscationSeed": 2836523,
+
+    "------------------------- tampering with these is against the spirit of the chalange -------------------------": 0,
+
+    "maxFileSize": 10000,
+    "maxNormalisation": 25,
+    "delays": 
+    {
+        "maxLoopWaitFrames": 20,
+        "minLoopWaitFrames": 1000
+    }
+}  
