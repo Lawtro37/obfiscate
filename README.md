@@ -59,11 +59,11 @@ console.log(getVariable(0))  ;          <-- this outputs 20
 This function is used to create a new function. The `code` parameter represents the code block of the function. then uses that code to create a new function.
 ```javascript
 createfunction("
-createVariable(10);                     
-changeVariable(0, getVariable(0) + 10); 
-console.log(getVariable(0))  ;          
+  createVariable(10);                     
+  changeVariable(0, getVariable(0) + 10); 
+  console.log(getVariable(0))  ;          
 ")
-a new function has been created
+//a new function has been created
 ```
 
 ### runFunction(index)
