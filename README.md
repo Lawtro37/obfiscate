@@ -38,6 +38,7 @@ Note: the amount alowed can be changed within the `config.json` file but is not 
 at least 10% of your code must be dead modifyers "^" dead modifyers dont count if they are next to each over
 
 ### Capitalisation modifyer "`"
+this modifyer will simplely capitalise the next charicter (if possible)
 
 ### createVariable(value)
 This function is used to create a new variable. The `value` parameter represents the initial value of the variable. it can be acsesed by its index wich is determend by when this function is called.                                                                                     
@@ -95,8 +96,7 @@ Note: The runFunction function randomly delays the execution of the function wit
 
 Contributions to **Obfiscate** are welcome! Feel free to open issues or submit pull requests for bug fixes, improvements, or new features.
 
-**contributers: 
-Lawton "Lawtro" kelly**
+**contributers: Lawton "Lawtro" kelly (createor)**
 
 ## License
 
