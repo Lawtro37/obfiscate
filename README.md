@@ -32,7 +32,8 @@ The use of `eval` and obfuscated code poses security risks, and executing obfusc
 ### normalised code "~"
 
 ### createVariable(value)
-This function is used to create a new variable. The `value` parameter represents the initial value of the variable. it can be acsesed by its index wich is determend by when this function is called
+This function is used to create a new variable. The `value` parameter represents the initial value of the variable. it can be acsesed by its index wich is determend by when this function is called.                                                                                     
+for example:
 ```javascript
 createVariable("test1") <-- index: 0
 createVariable("test2") <-- index: 1
