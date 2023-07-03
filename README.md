@@ -1,6 +1,11 @@
 # Obfiscate
 
-![Obfiscate Logo](link/to/logo.png)
+## Features
+
+- Obfuscation of code to make it difficult to understand.
+- Functional programming paradigm.
+- function random delay
+- function and variable numbering
 
 ## Configuration
 
