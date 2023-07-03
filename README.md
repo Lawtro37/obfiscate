@@ -32,7 +32,12 @@ The use of `eval` and obfuscated code poses security risks, and executing obfusc
 ### normalised code "~"
 
 ### createVariable(value)
-This function is used to create a new variable and add it to the variables array. The `value` parameter represents the initial value of the variable. The function pushes the `value` to the variables array, effectively creating a new variable.
+This function is used to create a new variable. The `value` parameter represents the initial value of the variable. it can be acsesed by its index wich is determend by when this function is called
+```javascript
+createVariable("test1") <-- index: 0
+createVariable("test2") <-- index: 1
+createVariable("test3") <-- index: 2
+```
 
 ### changeVariable(index, value)
 This function is used to change the value of an existing variable in the variables array. The `index` parameter represents the `index` of the variable to be changed, and the `value` parameter represents the new value to assign to the variable. The function updates the value of the variable at the specified index in the variables array.
