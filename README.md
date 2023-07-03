@@ -44,9 +44,10 @@ This function is used to retrieve the value of a variable from the variables arr
 This function is used to create a new function and add it to the functions array. The `code` parameter represents the code block of the function. then uses that code to create a new function.
 
 ### runFunction(index)
-This function is used to run a function. The `index` parameter represents the index of the function to be executed. The function uses setTimeout to delay the execution of the function. Inside the setTimeout callback, the eval function is used to evaluate the code of the function at the specified `index` in the functions array, wrapped inside an async function. This allows for the function to be executed asynchronously.
+This function is used to run a function. The `index` parameter represents the index of the function to be executed. The function uses setTimeout to delay the execution of the function. Inside the setTimeout callback, the eval function is used to evaluate the code of the function at the specified index in the functions array, wrapped inside an async function. This allows for the function to be executed asynchronously.
 
-Note: The runFunction function randomly delays the execution of the function within a specified range of time, using the Math.random function and the config.delays options.
+Note: The runFunction function randomly delays the execution of the function within a specified range of time,that can be changed within the `config.json` file.
+
 ## Contributing
 
 Contributions to **Obfiscate** are welcome! Feel free to open issues or submit pull requests for bug fixes, improvements, or new features.
