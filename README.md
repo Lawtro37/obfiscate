@@ -33,7 +33,6 @@ The use of `eval` and obfuscated code poses security risks, and executing obfusc
 
 ### createVariable(value)
 This function is used to create a new variable. The `value` parameter represents the initial value of the variable. it can be acsesed by its index wich is determend by when this function is called.                                                                                     
-for example:
 ```javascript
 createVariable("test1") <-- index: 0
 createVariable("test2") <-- index: 1
@@ -41,7 +40,7 @@ createVariable("test3") <-- index: 2
 ```
 
 ### changeVariable(index, value)
-This function is used to change the value of an existing variable. The `index` parameter represents the index of the variable to be changed, and the `value` parameter represents the new value to assign to the variable. The function updates the value of the variable at the specified index. for example:
+This function is used to change the value of an existing variable. The `index` parameter represents the index of the variable to be changed, and the `value` parameter represents the new value to assign to the variable. The function updates the value of the variable at the specified index.
 ```javascript
 createVariable(10); <-- variable 0 has a value of 10
 changeVariable(0, 100) <-- variable 0 now has a value of 100
@@ -58,8 +57,8 @@ console.log(getVariable(0))  ;          <-- this outputs 20
 ### createFunction(code)
 This function is used to create a new function. The `code` parameter represents the code block of the function. then uses that code to create a new function.
 ```javascript
-createfunction("
-  createVariable(10);                     
+createVariable(10);  
+createfunction("                   
   changeVariable(0, getVariable(0) + 10); 
   console.log(getVariable(0))  ;          
 ")
@@ -68,6 +67,17 @@ createfunction("
 
 ### runFunction(index)
 This function is used to run a function. The `index` parameter represents the index of the function to be executed. 
+
+```javascript
+createVariable(10);
+createfunction("                   
+  changeVariable(0, getVariable(0) + 10); 
+  console.log(getVariable(0))  ;          
+")
+
+runFunction(0); <-- outputs 20
+runFunction(0); <-- outputs 30
+```
 
 Note: The runFunction function randomly delays the execution of the function within a specified range of time,that can be changed within the `config.json` file.
 
