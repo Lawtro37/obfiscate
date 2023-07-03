@@ -32,19 +32,19 @@ The use of `eval` and obfuscated code poses security risks, and executing obfusc
 ### normalised code "~"
 
 ### createVariable(value)
-This function is used to create a new variable and add it to the variables array. The `value` parameter represents the initial `value` of the variable. The function pushes the `value` to the variables array, effectively creating a new variable.
+This function is used to create a new variable and add it to the variables array. The `value` parameter represents the initial value of the variable. The function pushes the `value` to the variables array, effectively creating a new variable.
 
 ### changeVariable(index, value)
-This function is used to change the `value` of an existing variable in the variables array. The `index` parameter represents the `index` of the variable to be changed, and the `value` parameter represents the new `value` to assign to the variable. The function updates the `value` of the variable at the specified `index` in the variables array.
+This function is used to change the value of an existing variable in the variables array. The `index` parameter represents the `index` of the variable to be changed, and the `value` parameter represents the new value to assign to the variable. The function updates the value of the variable at the specified index in the variables array.
 
 ### getVariable(index)
-This function is used to retrieve the `value` of a variable from the variables array. The `index` parameter represents the `index` of the variable to be retrieved. The function returns the `value` of the variable at the specified `index` in the variables array.
+This function is used to retrieve the value of a variable from the variables array. The `index` parameter represents the index of the variable to be retrieved. The function returns the value of the variable at the specified index in the variables array.
 
 ### createFunction(code)
-This function is used to create a new function and add it to the functions array. The `code` parameter represents the code block of the function. The function pushes the `code` to the functions array, effectively creating a new function.
+This function is used to create a new function and add it to the functions array. The `code` parameter represents the code block of the function. then uses that code to create a new function.
 
 ### runFunction(index)
-This function is used to run a function from the functions array asynchronously. The `index` parameter represents the `index` of the function to be executed. The function uses setTimeout to delay the execution of the function, simulating an asynchronous behavior. Inside the setTimeout callback, the eval function is used to evaluate the code of the function at the specified `index` in the functions array, wrapped inside an async function. This allows for the function to be executed asynchronously.
+This function is used to run a function. The `index` parameter represents the index of the function to be executed. The function uses setTimeout to delay the execution of the function. Inside the setTimeout callback, the eval function is used to evaluate the code of the function at the specified `index` in the functions array, wrapped inside an async function. This allows for the function to be executed asynchronously.
 
 Note: The runFunction function randomly delays the execution of the function within a specified range of time, using the Math.random function and the config.delays options.
 ## Contributing
