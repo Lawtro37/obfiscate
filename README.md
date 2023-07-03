@@ -95,6 +95,9 @@ Note: The runFunction function randomly delays the execution of the function wit
 
 Contributions to **Obfiscate** are welcome! Feel free to open issues or submit pull requests for bug fixes, improvements, or new features.
 
+**contributers: 
+Lawton "Lawtro" kelly**
+
 ## License
 
 This project is licensed under the MIT License.
