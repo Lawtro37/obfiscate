@@ -48,13 +48,26 @@ changeVariable(0, 100) <-- variable 0 now has a value of 100
 ```
 
 ### getVariable(index)
-This function is used to retrieve the value of a variable from the variables array. The `index` parameter represents the index of the variable to be retrieved. The function returns the value of the variable at the specified index in the variables array.
+This function is used to retrieve the value of a variable. The `index` parameter represents the index of the variable to be retrieved. The function returns the value of the variable at the specified index in the variables array.
+```javascript
+createVariable(10);                     <-- variable 0 has a value of 10
+changeVariable(0, getVariable(0) + 10); <-- variable 0 increaced by 10
+console.log(getVariable(0))  ;          <-- this outputs 20
+```
 
 ### createFunction(code)
-This function is used to create a new function and add it to the functions array. The `code` parameter represents the code block of the function. then uses that code to create a new function.
+This function is used to create a new function. The `code` parameter represents the code block of the function. then uses that code to create a new function.
+```javascript
+createfunction("
+createVariable(10);                     
+changeVariable(0, getVariable(0) + 10); 
+console.log(getVariable(0))  ;          
+")
+a new function has been created
+```
 
 ### runFunction(index)
-This function is used to run a function. The `index` parameter represents the index of the function to be executed. The function uses setTimeout to delay the execution of the function. Inside the setTimeout callback, the eval function is used to evaluate the code of the function at the specified index in the functions array, wrapped inside an async function. This allows for the function to be executed asynchronously.
+This function is used to run a function. The `index` parameter represents the index of the function to be executed. 
 
 Note: The runFunction function randomly delays the execution of the function within a specified range of time,that can be changed within the `config.json` file.
 
