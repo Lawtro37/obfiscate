@@ -60,7 +60,7 @@ changeVariable(0, 100)                  <-- variable 0 now has a value of 100
 This function is used to retrieve the value of a variable. The `index` parameter represents the index of the variable to be retrieved. The function returns the value of the variable at the specified index in the variables array.
 ```javascript
 createVariable(10);                     <-- variable 0 has a value of 10
-changeVariable(0, getVariable(0) + 10); <-- variable 0 increaced by 10
+changeVariable(0, getVariable(0) + 10); <-- variable 0 increased by 10
 console.log(getVariable(0))  ;          <-- this outputs 20
 ```
 
