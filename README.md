@@ -70,7 +70,7 @@ This function is used to create a new function. The `code` parameter represents 
 createVariable(10);  
 createfunction("                   
   changeVariable(0, getVariable(0) + 10); 
-  console.log(getVariable(0))  ;          
+  console.log(getVariable(0));          
 ")
 //a new function has been created
 ```
@@ -82,7 +82,7 @@ This function is used to run a function. The `index` parameter represents the in
 createVariable(10);
 createfunction("                   
   changeVariable(0, getVariable(0) + 10); 
-  console.log(getVariable(0))  ;          
+  console.log(getVariable(0));          
 ")
 
 runFunction(0); <-- outputs 20
