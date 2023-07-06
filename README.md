@@ -61,7 +61,7 @@ This function is used to retrieve the value of a variable. The `index` parameter
 ```javascript
 createVariable(10);                     <-- variable 0 has a value of 10
 changeVariable(0, getVariable(0) + 10); <-- variable 0 increased by 10
-console.log(getVariable(0))  ;          <-- this outputs 20
+console.log(getVariable(0));            <-- this outputs 20
 ```
 
 ### createFunction(code)
